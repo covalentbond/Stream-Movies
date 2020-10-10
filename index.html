@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie-Info</title>
+
+  <!-- Bootstrap CDN LINK-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css\home.css">
+  <link rel="icon" href="Images\ak1_favicon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" as="style">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap">
+
+</head>
+
+<body>
+  <img class="reel" src="Images\reel1.png" alt="reel">
+  <img class="searching" src="Images\cherry-searching.png" alt="Search">
+  <form class="" action="/" method="post">
+    <div class="background">
+      <!-- <div class="container"> -->
+      <p class="lead">Search</p>
+      <h1 class="display-4 typed1"></h1>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+      <script class="heading">
+        var typed = new Typed(".typed1", {
+          strings: ["Movies", "Web Series", "TV Shows"],
+          typeSpeed: 70,
+          backSpeed: 70,
+          loop: true
+          // console.log(strings);
+        });
+      </script>
+      <br>
+
+      <!-- <div class=""> -->
+      <input type="text" class="rounded" name="movieNaam" placeholder="Movie" autocomplete="off">
+      <button type="submit" class="btn btn-light btn-lg" name="button">Search</button>
+
+      <p class="lead2">One stop destination for all your movie details.</p>
+      <div class="qrdiv">
+        <!-- <p>Scan the QR Code to reveal a surprise</p> -->
+        <img src="Images\QRcode.jpg" class="qrcode">
+        <!-- The face that now we cannot go physically to cinema hall, what if we render a theatre in your room -->
+      </div>
+    </div>
+  </form>
+</body>
+<footer>
+  <p class="footer">© 2020 Stream Movies.</p>
+</footer>
+
+</html>

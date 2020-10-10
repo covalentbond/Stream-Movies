@@ -1,0 +1,26 @@
+{
+  "name": "movie-stream-online",
+  "version": "1.0.0",
+  "description": "Find the best movie and stream it online with your friends",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arijit Kundu",
+  "license": "ISC",
+  "engines": {
+    "node": "v12.17.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "peer": "^0.5.3",
+    "request": "^2.88.2",
+    "socket.io": "^2.3.0",
+    "typed.js": "^2.0.11",
+    "uuid": "^8.3.1"
+  }
+}

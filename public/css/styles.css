@@ -1,0 +1,194 @@
+body {
+  background-image: linear-gradient(to right, rgb(0, 0, 0, .9), rgb(0, 0, 0, .9)), url(/Images/poster1.jpg);
+  text-align: center;
+  /* font-size: 20px; */
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.round2 {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.back {
+  position: absolute;
+  left: 65px;
+  padding-top: 13px;
+  transform: rotate(180deg);
+}
+
+.poster {
+  margin: auto;
+}
+
+.container-2 {
+  padding: 20px 65px 60px 65px;
+  display: flex;
+}
+
+.container-1 {
+  background-color: #eeeeee;
+  display: flex;
+  padding: 10px;
+  padding-top: 0;
+  width: 500px;
+  margin: auto;
+  margin-top: 10px;
+  padding-bottom: 0;
+}
+
+.container-3 {
+  background-color: white;
+  margin-left: 45px;
+  flex-direction: column;
+  font-size: 17px;
+}
+
+.box-2 {
+  flex: 1.25;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.box-2-1 {
+  flex: 1.5;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.box-2-2 {
+  flex: 2;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  /* padding-top: 16px; */
+}
+
+.box-1 {
+  flex: 0.65;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  align-items: center;
+}
+
+.plot {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #eeeeee;
+}
+
+.details {
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.img-fluid1 {
+  width: 315px;
+}
+
+.movie-name {
+  margin: 30px;
+  margin-bottom: 12.5px;
+  margin-top: 0;
+  font-size: 65px;
+  font-weight: bold;
+
+}
+
+.card-group {
+  display: flex;
+}
+
+.rating {
+  flex: 1;
+  width: 30%;
+}
+
+.rotten {
+  margin-bottom: 40px;
+}
+
+.imdb {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  padding-top: 40px;
+  padding-bottom: 21px;
+}
+
+.title-imdb {
+  margin-bottom: 27px;
+}
+
+.roomButton {
+  background: floralwhite;
+  border-radius: 50px;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 30px;
+  }
+
+  .back {
+    display: none;
+  }
+
+  .img-fluid1 {
+    margin-top: 50px;
+    width: 625px;
+  }
+
+  .container-2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+  }
+
+  .container-1 {
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    padding-left: 0;
+  }
+
+  .plot {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 25px;
+  }
+
+  .p2.box-2-2 {
+    flex: 1;
+  }
+
+  .poster {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .container-3 {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0;
+    margin: 30px;
+  }
+
+  .details {
+    font-size: 25px;
+  }
+
+  .movie-name {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .container-2 {
+    padding: auto;
+  }
+}

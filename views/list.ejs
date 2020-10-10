@@ -1,0 +1,71 @@
+<%- include("header") -%>
+
+<a href="/"><img class="back" src="Images\arrow.png" alt="BACK" action="" method="post"></a>
+
+<div class="container-2 round2">
+
+  <div class="poster">
+    <img src=<%= poster %> class="img-fluid1" alt="Responsive image">
+    <button class="roomButton" onclick="window.location.href=`/movie-room/<%= title %>`">Go to <b><%= title %></b> Room
+      full of
+      <%= genretwo %>
+      !</button>
+  </div>
+
+  <div class="container-3 round2">
+    <div class="container-1 d-flex justify-content-center">
+      <div class="p2 box-2"><%= imdbRating %> <img src="Images\star.png"></div>
+      <div class="p2 box-1"><%=country%></div>
+      <div class="p2 box-1"><%= year %></div>
+      <div class="p2 box-2-2"><%= genretwo %></div>
+      <div class="p2 box-2-1"><i class="far fa-clock"></i> <%= duration %></div>
+    </div>
+    <h1 class="movie-name"><%= title %></h1>
+    <p class="plot"><%= plot %></p>
+
+    <div class="details">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><b>Genre — </b><%= genre %></li>
+        <li class="list-group-item"><b>Director — </b><%= director %></li>
+        <li class="list-group-item"><b>Language — </b><%= language %></li>
+        <li class="list-group-item"><b>Awards — </b><%= awards %></li>
+        <li class="list-group-item"><b>Rated — </b><%= rated %></li>
+      </ul>
+    </div>
+
+    <!-- Ratings -->
+    <div class="row" style="text-align: center;">
+      <div class="col-lg-4">
+        <div class="rating-card card">
+          <div class="card-body imdb">
+            <h5 class="card-title title-imdb"><img class="rating-image" src="Images\imdb.png" alt="IMDB"></h5>
+            <p class=" rating-text card-text"><%=imdbRating%></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="rating-card card">
+          <div class="card-body" style="padding-bottom: 20px">
+            <h5 class="rotten"><img class="rating-image" src="Images\rotten.png" alt="Rotten" height="38" width="125"
+                style="margin-top: 35px"></h5>
+            <p class=" rating-text card-text"><%=rtRating%></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="rating-card card">
+          <div class="card-body">
+            <h5 class="card-title"><img class="rating-image" src="Images\film.png" alt="Film" height="100" width="100">
+            </h5>
+            <p class="rating-text card-text"><%=type%></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<%- include("footer") -%>
