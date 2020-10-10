@@ -6,10 +6,12 @@
 
   <div class="poster">
     <img src=<%= poster %> class="img-fluid1" alt="Responsive image">
-    <button class="roomButton" onclick="window.location.href=`/<%= title %>`">Go to <b><%= title %> Room</b>
+    <button class="roomButton" onclick="window.location.href=`/<%= title %>`">Go to <b><%= title %>
+        Room</b>
       full of
       <%= genretwo %>
       !</button>
+    <img class="qrCode" id="qrCode">
   </div>
 
   <div class="container-3 round2">
@@ -20,7 +22,7 @@
       <div class="p2 box-2-2"><%= genretwo %></div>
       <div class="p2 box-2-1"><i class="far fa-clock"></i> <%= duration %></div>
     </div>
-    <h1 class="movie-name"><%= title %></h1>
+    <h1 class="movie-name" id="movie-name"><%= title %></h1>
     <p class="plot"><%= plot %></p>
 
     <div class="details">
@@ -67,5 +69,34 @@
 
 </div>
 
+<script>
+  const movie = document.getElementById("movie-name");
+  const id = document.getElementById("qrCode");
+
+  console.log(movie.innerHTML)
+  console.log(id)
+
+  var hour = new Date().getHours();
+  var greeting;
+  if (movie.innerHTML == "Iron Man") {
+    id.setAttribute("src", "ironMan.jpg")
+  } else if (movie.innerHTML == "Interstellar") {
+    id.setAttribute("src", "interstellar.jpg")
+  } else if (movie.innerHTML == "The Avengers") {
+    id.setAttribute("src", "avengers.jpg")
+  } else if (movie.innerHTML == "Stranger Things") {
+    id.setAttribute("src", "strangerThings.jpg")
+  } else if (movie.innerHTML == "Spider Man") {
+    id.setAttribute("src", "spiderMan.jpg")
+  } else if (movie.innerHTML == "Superman") {
+    id.setAttribute("src", "superMan.jpg")
+  } else if (movie.innerHTML == "Batman") {
+    id.setAttribute("src", "batMan.jpg")
+  } else if (movie.innerHTML == "Joker") {
+    id.setAttribute("src", "joker.jpg")
+  } else {
+    id.setAttribute("style", "display: none")
+  }
+</script>
 
 <%- include("footer") -%>

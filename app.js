@@ -52,7 +52,8 @@ app.post("/", function (req, res) {
 
         const genrefull = movieData.Genre;
         var genreshort = genrefull.split(",");
-        var genretwo = genreshort[0] + genreshort[1];
+        var genreshortfirst = typeof genreshort[1] === "undefined" ? " " : genreshort[1];
+        var genretwo = genreshort[0] + genreshortfirst;
 
         const duration = movieData.Runtime;
         const title = movieData.Title;

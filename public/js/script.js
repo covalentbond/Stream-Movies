@@ -133,7 +133,7 @@ const setMuteButton = () => {
 };
 
 const exit = () => {
-  window.location.href = "http://resillience.in";
+  window.location.href = "https://stream-movies-online.herokuapp.com/";
 };
 
 const setUnmuteButton = () => {
