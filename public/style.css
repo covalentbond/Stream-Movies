@@ -16,7 +16,6 @@
 
 .main__videos {
   flex-grow: 1;
-  /* background-image: url("https://miro.medium.com/max/386/0*aIuQnN5Vma2UIOGh.gif"); */
   background-color: black;
   display: flex;
   justify-content: center;

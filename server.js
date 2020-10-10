@@ -101,13 +101,13 @@ app.get("/room", (req, res) => {
   res.redirect(`/${roomNo}`);
 });
 
-app.get("/movie-room/:room", (req, res) => {
+app.get("/:room", (req, res) => {
   res.render("room", { roomId: req.params.room });
 });
 
-app.get("/echoAR", (req, res) => {
-  res.render("home");
-});
+// app.get("/echoAR", (req, res) => {
+//   res.render("home");
+// });
 
 io.on("connection", (socket) => {
   socket.on("join-room", (roomId, userId) => {
